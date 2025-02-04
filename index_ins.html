@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Insurance Model</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+}
+
+
+
+
+    </style>
+  </head>
+  <body class="bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="card" style="width: 100%;  height:100%; margin-top: 50px;">
+                        <div class="card-header" style="text-align: center;">
+                            <h1>Insurance Model</h1>
+
+                        </div>
+                        <div class="card-body">
+                            <form method="POST" action="/result" accept-charset="utf-8">
+
+                                <div class="row">
+
+                                    <div class="col-md-6 form-group" style="text-align: center;">
+                                        <label>
+                                            <b>Enter Age:</b>
+                                        </label>
+                                        <input type="text"  class="form-control" id="age" name="age" placeholder="Enter Your Age :"  >
+
+                                        </div>
+                                    <div class="col-md-6 form-group" style="text-align: center;">
+                                    <label for="locations"><b>Gender :</b></label>
+                                    <select class="selectpicker form-control" id="gender" name="gender"  required="1">
+                                  
+                                  <option value="0">male</option>
+                                    <option value="1">female</option>
+                                    
+                                   
+                                
+
+                                    </select> 
+                                </div>       
+                                <div class="col-md-6 form-group" style="text-align: center;">
+                                <label>
+                                    <b>Enter BMI :</b>
+                                </label>
+                                <input type="text"  class="form-control" id="bmi" name="bmi" placeholder="Enter Your BMI"  >
+                                            
+                                </div>
+                                <div class="col-md-6 form-group" style="text-align: center;">
+                                    <label>
+                                        <b>Are Yor Smoker ?  :</b>
+                                    </label>
+                                    <select class="selectpicker form-control" id="smoker" name="smoker"  required="1">
+                                  
+                                        <option value="0">yes</option>
+                                          <option value="1">no</option>
+                               </select>
+
+                            </div>  
+                                                  
+                            <div class="col-md-6 form-group" style="text-align: center;">
+                                <label><b>Region</b></label>
+                                <select class="selectpicker form-control" id="region" name="region"  required="1">
+                                     <option value="0">southeast</option>
+                                      <option value="1">southwest</option>
+                                      <option value="2">northeast</option>
+                                      <option value="3">northwest</option>
+                               </select>
+
+                            </div>
+                            <div class="col-md-6 form-group" style="text-align: center;">
+                                <label>
+                                    <b>Enter Children</b>
+                                </label>
+                                <input type="text"  class="form-control" id="children" name="children" placeholder="Enter Number Of Children"  >
+                                    
+                                <br>
+                                
+                            </div>
+                            <input type="submit" value="Submit" class="submit">
+                        </div>
+                        <p style="text-align: center; margin-top: 20px;">
+                            <a href="\bmipage" style="color: #007bff; text-decoration: none;">Calculate your BMI - Click here</a>
+                    </form>
+                    
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+               
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+      </script>    
+    </body>
+</html>
